@@ -19,7 +19,7 @@ A % of each rebase will be distributed proportionately to holders of the Cultist
 
 **A simple way to picture the way it works:**
 
-Imagine taking 1% of $1,000,000 that is spread amongst 10,000 people evenly. They each would get $999 each instead of $1000. No big deal.
+Imagine taking 1% of $1,000,000 that is spread amongst 10,000 people evenly. They each would get $99 each instead of $100. No big deal.
 
 That leaves us with $10,000 to spread out between roughly 500 holders, as some people will hold multiple NFTs.
 
@@ -27,7 +27,7 @@ Each holder gets 20$ every 8 hours.
 
 When you take from such a large pool with many investors, and funnel it down to a small exclusive group, it goes from barely noticeable to a very sizable amount.
 
-Plus, each of those original 10,000 people have the opportunity at any time to buy a cultist and get an extra 60$, instead of losing the 1$ and getting 999$, they'd get 1059$.
+Plus, each of those original 10,000 people have the opportunity at any time to buy a cultist and get an extra 60$, instead of losing the 1$ and getting 99$, they'd get 159$.
 
 
 
