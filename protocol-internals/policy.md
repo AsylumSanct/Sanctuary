@@ -18,5 +18,4 @@ Profit Allocations are the only treasury variable. This allows us to choose who 
 
 ## Staking
 
-There are no variables in the staking contract. SANCT and sSANCT are always redeemable 1:1, and profits are always distributed equally through rebase.
-
+There are no variables in the staking contract. REAP and SOW are always redeemable 1:1, and profits are always distributed equally through rebase.
