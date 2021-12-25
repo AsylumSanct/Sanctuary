@@ -40,75 +40,61 @@ $$
 bondPayout_{reserveBond} = marketValue_{asset}\ /\ bondPrice
 $$
 
-Bond payout determines the number of SANCT sold to a bonder. For \[reserve bonds], the market value of the assets supplied by the bonder is used to determine the bond payout. For example, if a user supplies 1000 DAI and the bond price is 250 DAI, the user will be entitled 4 SANCT.
+Bond payout determines the number of REAP sold to a bonder. For reserve bonds, the market value of the assets supplied by the bonder is used to determine the bond payout.&#x20;
 
 $$
 bondPayout_{lpBond} = marketValue_{lpToken}\ /\ bondPrice
 $$
 
-For \[liquidity bonds], the market value of the LP tokens supplied by the bonder is used to determine the bond payout. For example, if a user supplies 0.001 SANCT-DAI LP token which is valued at 1000 DAI at the time of bonding, and the bond price is 250 DAI, the user will be entitled 4 SANCT.
+For liquidity bonds, the market value of the LP tokens supplied by the bonder is used to determine the bond payout. For example, if a user supplies 0.001 REAP-USDC LP token which is valued at 1000 USDC at the time of bonding, and the bond price is 250 USDC, the user will be entitled 4 REAP.
 
-## SANCT Supply
-
-$$
-SANCT_{supplyGrowth} = SANCT_{stakers} + SANCT_{bonders} + SANCT_{DAO} + SANCT_{pSANCTExercise}
-$$
-
-SANCT supply does not have a hard cap. Its supply increases when:
-
-* SANCT is minted and distributed to the stakers.
-* SANCT is minted for the bonder. This happens whenever someone purchases a bond.
-* SANCT is minted for the DAO. This happens whenever someone purchases a bond. The DAO gets the same number of SANCT as the bonder.
-*   SANCT is minted for the team, investors, advisors, or the DAO. This happens whenever
-
-    the aforementioned party exercises their pSANCT.
+## REAP Supply
 
 $$
-SANCT_{stakers} = SANCT_{totalSupply} * rewardRate
+REAP_{supplyGrowth} = SOW_{stakers} + REAP_{bonders}
 $$
 
-At the end of each epoch, the treasury mints SANCT at a set \[reward rate]. These SANCT will be distributed to all the stakers in the protocol. You can track the latest reward rate on the \[Sanctuary Policy dashboard].
+REAP supply does not have a hard cap. Its supply increases when:
+
+* REAP is minted and distributed to the stakers.
+* REAP is minted for the bonder. This happens whenever someone purchases a bond.
 
 $$
-SANCT_{bonders} = bondPayout
+SOW_{stakers} = REAP_{totalSupply} * rewardRate
 $$
 
-Whenever someone purchases a bond, a set number of SANCT is minted. These SANCT will not be released to the bonder all at once - they are vested to the bonder linearly over time. The bond payout uses a different formula for different types of bonds. Check the [bonding section above](equations.md#bonding) to see how it is calculated.
+At the end of each rebase, the treasury mints REAP at a set reward rate, to be distributed to all the stakers in the protocol. You can track the latest reward rate on the Sanctuary dashboard.
 
 $$
-SANCT_{DAO} = SANCT_{bonders}
+REAP_{bonders} = bondPayout
 $$
 
-The DAO receives the same amount of SANCT as the bonder. This represents the DAO profit.
+Whenever someone purchases a bond, a set number of REAP is minted. These REAP will not be released to the bonder all at once - they are vested to the bonder linearly over time. The bond payout uses a different formula for different types of bonds. The Bonding section has more information.
+
+
+
+## Backing per REAP
 
 $$
-SANCT_{pSANCTExercise} = pSANCT + DAI
+REAP_{backing} = treasuryBalance_{stablecoin} + treasuryBalance_{otherAssets}
 $$
 
-The individual would supply 1 pSANCT along with 1 DAI to mint 1 SANCT. The pSANCT is subsequently burned.
-
-## Backing per SANCT
-
-$$
-SANCT_{backing} = treasuryBalance_{stablecoin} + treasuryBalance_{otherAssets}
-$$
-
-Every SANCT in circulation is backed by the Sanctuary treasury. The assets in the treasury can be divided into two categories: stablecoin and non-stablecoin.
+Every REAP in circulation is backed by the Sanctuary treasury. The assets in the treasury can be divided into two categories: stablecoin and non-stablecoin.
 
 $$
 treasuryBalance_{stablecoin} = RFV_{reserveBond} + RFV_{lpBond}
 $$
 
-The stablecoin balance in the treasury grows when bonds are sold. \[RFV]is calculated differently for different bond types.
+The stablecoin balance in the treasury grows when bonds are sold. RFV is calculated differently for different bond types.
 
 $$
 RFV_{reserveBond} = assetSupplied
 $$
 
-For reserve bonds such as DAI bond and FRAX bond, the RFV simply equals to the amount of the underlying asset supplied by the bonder.
+For reserve bonds such as USDC, the RFV simply equals to the amount of the underlying asset supplied by the bonder.
 
 $$
 RFV_{lpBond} = 2sqrt(constantProduct) * (\%\ ownership\ of\ the\ pool)
 $$
 
-For LP bonds such as SANCT-DAI bond and SANCT-FRAX bond, the RFV is calculated differently because the protocol needs to mark down its value. Why? The LP token pair consists of SANCT, and each SANCT in circulation will be backed by these LP tokens - there is a cyclical dependency. To safely guarantee all circulating SANCT are backed, the protocol marks down the value of these LP tokens, hence the name _risk-free_ value (RFV).
+For LP bonds such as REAP-UDSC, the RFV is calculated differently because the protocol needs to mark down its value. Why? The LP token pair consists of REAP, and each REAP in circulation will be backed by these LP tokens - there is a cyclical dependency. To safely guarantee all circulating REAP are backed, the protocol marks down the value of these LP tokens, hence the name _risk-free_ value (RFV).

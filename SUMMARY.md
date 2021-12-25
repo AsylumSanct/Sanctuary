@@ -14,7 +14,7 @@
   * [Staking](contracts/staking.md)
   * [Tokens](contracts/tokens.md)
   * [Treasury](contracts/treasury.md)
-* [☁ Protocol Internals](protocol-internals/README.md)
+* [💫 Protocol Internals](protocol-internals/README.md)
   * [Alpha State](protocol-internals/initial-network-state.md)
   * [Market Dynamics](protocol-internals/market-dynamics.md)
   * [Policy](protocol-internals/policy.md)

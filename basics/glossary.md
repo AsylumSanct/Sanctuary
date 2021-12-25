@@ -14,16 +14,15 @@ Bond Control Variable, is the scaling factor at which bond prices change. A high
 
 ## DAO
 
-Decentralized Autonomous Organization, is a governance mechanism for making decisions in a more trustless and collaborative way. Voting rights are often bound to a governance token. In Sanctuary the governance token is sSANCT.
+Decentralized Autonomous Organization, is a governance mechanism for making decisions in a more trustless and collaborative way.
 
 ## DCV
 
 Deflation Control Variable, is the scaling factor at which protocol defined buy pressure changes. A higher DCV means more buy pressure from the protocol, resulting in a higher deflation. A lower DCV means less buy pressure from the protocol, resulting in a lower deflation.
 
-
 ## Liquidity Bonds
 
-Liquidity bonds are LP token bonds. Examples are SANCT-DAI LP bonds and SANCT-FRAX LP bonds.
+Liquidity bonds are LP token bonds. Ex: REAP-UDSC LP.
 
 ## PCV
 
@@ -35,28 +34,27 @@ Protocol Owned Liquidity, is the amount of LP the treasury owns and controls. Th
 
 ## PoR
 
-Proof of Reserve, is the mechanism of strengthening the reserve of Sanctuary treasury via the sales of bonds. Bonders provide liquidity to the treasury, thereby building its reserve. In return for their service, bonders get paid in SANCT.
+Proof of Reserve, is the mechanism of strengthening the reserve of Sanctuary treasury via the sales of bonds. Bonders provide liquidity to the treasury, thereby building its reserve. In return for their service, bonders get paid in REAP.
 
 ## Reserve Bonds
 
-Reserve bonds are single asset bonds. They are sometimes referred to as "naked" bonds. Examples are DAI bonds and FRAX bonds.
+Reserve bonds are single asset bonds. They are sometimes referred to as "naked" bonds. Ex: USDC.
 
 ## Reward Rate
 
-Reward rate is the configured percentage of SANCT distributed to all stakers on each rebase relative to the total supply. The reward rate is precisely set by the policy team.
+Reward rate is the configured percentage of REAP distributed to all stakers on each rebase relative to the total supply. The reward rate is subject to change under authority of the DAO and policy team.
 
 ## Reward Yield
 
-Reward yield refers to the actual amount of SANCT received by each staker on each rebase. The reward yield is a rough target from a policy point of view. It can almost never be maintained precisely due to e.g. fluctuating amounts of SANCT staked.
+Reward yield refers to the actual amount of REAP received by each staker on each rebase. The reward yield is a rough target from a policy point of view. It can almost never be maintained precisely due to fluctuating amounts of SOW staked.
 
 ## RFV
 
-Risk Free Value, is the amount of funds the treasury guarantees to use for backing SANCT.
-
+Risk Free Value, is the amount of funds the treasury guarantees to use for backing REAP.
 
 ## TVL
 
-Total Value Locked, is the dollar amount of all SANCT staked in the protocol. This metric is often used as growth or health indicator in DeFi projects.
+Total Value Locked, is the dollar amount of all REAP staked in the protocol.&#x20;
 
 ## TaaS
 
@@ -65,4 +63,3 @@ Treasury as a Service, is the business model of decentralized custody of partner
 ## TWAP
 
 Time Weighted Average Price, is the average price of an asset over a specified time. TWAPs are used to represent the fair value of an asset as defined by the market.
-
