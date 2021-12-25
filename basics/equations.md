@@ -6,13 +6,13 @@ $$
 deposit = withdrawal
 $$
 
-Swaps between SANCT and sSANCT during staking and unstaking are always honored 1:1. The amount of SANCT deposited into the staking contract will always result in the same amount of sSANCT. And the amount of sSANCT withdrawn from the staking contract will always result in the same amount of SANCT.
+Swaps between REAP and SOW during staking and unstaking are always honored 1:1. The amount of REAP deposited into the staking contract will always result in the same amount of SOW. And the amount of SOW withdrawn from the staking contract will always result in the same amount of REAP.
 
 $$
-rebase = 1 - ( SANCTDeposits / sSANCTOutstanding )
+rebase = 1 - ( REAPDeposits / SOWoutstanding )
 $$
 
-The treasury deposits SANCT into the distributor. The distributor then deposits SANCT into the staking contract, creating an imbalance between SANCT and sSANCT. sSANCT is rebased to correct this imbalance between SANCT deposited and sSANCT outstanding. The rebase brings sSANCT outstanding back up to parity so that 1 sSANCT equals 1 staked SANCT.
+The treasury deposits REAP into the distributor. The distributor then deposits REAP into the staking contract, creating an imbalance between REAP and SOW. SOW is rebased to correct this imbalance between REAP deposited and SOW outstanding. The rebase brings SOW outstanding back up to parity so that 1 SOW equals 1 REAP.
 
 ## Bonding
 
@@ -20,33 +20,33 @@ $$
 bond Price = 1 + Premium
 $$
 
-SANCT has an intrinsic value of 1 DAI, which is roughly equivalent to $1. In order to make a profit from bonding, Sanctuary charges a premium for each bond.
+REAP has an intrinsic value of 1 USDC, which is equivalent to $1. In order to make a profit from bonding, Sanctuary charges a premium for each bond.
 
 $$
 Premium = debt Ratio * BCV
 $$
 
-The premium is derived from the debt ratio of the system and a scaling variable called [BCV]BCV allows us to control the rate at which bond prices increase.
+The premium is derived from the debt ratio of the system and a scaling variable called BCV. The BCV allows us to control the rate at which bond prices increase.
 
-The premium determines profit due to the protocol and in turn, stakers. This is because new SANCT is minted from the profit and subsequently distributed among all stakers.
+The premium determines profit due to the protocol and in turn, stakers. This is because new REAP is minted from the profit and subsequently distributed among all stakers.
 
 $$
-debt Ratio = bondsOutstanding/SANCTSupply
+debt Ratio = bondsOutstanding/REAPSupply
 $$
 
-The debt ratio is the total of all SANCT promised to bonders divided by the total supply of SANCT. This allows us to measure the debt of the system.
+The debt ratio is the total of all REAP promised to bonders divided by the total supply of REAP. This allows us to measure the debt of the system.
 
 $$
 bondPayout_{reserveBond} = marketValue_{asset}\ /\ bondPrice
 $$
 
-Bond payout determines the number of SANCT sold to a bonder. For [reserve bonds], the market value of the assets supplied by the bonder is used to determine the bond payout. For example, if a user supplies 1000 DAI and the bond price is 250 DAI, the user will be entitled 4 SANCT.
+Bond payout determines the number of SANCT sold to a bonder. For \[reserve bonds], the market value of the assets supplied by the bonder is used to determine the bond payout. For example, if a user supplies 1000 DAI and the bond price is 250 DAI, the user will be entitled 4 SANCT.
 
 $$
 bondPayout_{lpBond} = marketValue_{lpToken}\ /\ bondPrice
 $$
 
-For [liquidity bonds], the market value of the LP tokens supplied by the bonder is used to determine the bond payout. For example, if a user supplies 0.001 SANCT-DAI LP token which is valued at 1000 DAI at the time of bonding, and the bond price is 250 DAI, the user will be entitled 4 SANCT.
+For \[liquidity bonds], the market value of the LP tokens supplied by the bonder is used to determine the bond payout. For example, if a user supplies 0.001 SANCT-DAI LP token which is valued at 1000 DAI at the time of bonding, and the bond price is 250 DAI, the user will be entitled 4 SANCT.
 
 ## SANCT Supply
 
@@ -59,15 +59,15 @@ SANCT supply does not have a hard cap. Its supply increases when:
 * SANCT is minted and distributed to the stakers.
 * SANCT is minted for the bonder. This happens whenever someone purchases a bond.
 * SANCT is minted for the DAO. This happens whenever someone purchases a bond. The DAO gets the same number of SANCT as the bonder.
-* SANCT is minted for the team, investors, advisors, or the DAO. This happens whenever
+*   SANCT is minted for the team, investors, advisors, or the DAO. This happens whenever
 
-  the aforementioned party exercises their pSANCT.
+    the aforementioned party exercises their pSANCT.
 
 $$
 SANCT_{stakers} = SANCT_{totalSupply} * rewardRate
 $$
 
-At the end of each epoch, the treasury mints SANCT at a set [reward rate]. These SANCT will be distributed to all the stakers in the protocol. You can track the latest reward rate on the [Sanctuary Policy dashboard].
+At the end of each epoch, the treasury mints SANCT at a set \[reward rate]. These SANCT will be distributed to all the stakers in the protocol. You can track the latest reward rate on the \[Sanctuary Policy dashboard].
 
 $$
 SANCT_{bonders} = bondPayout
@@ -99,7 +99,7 @@ $$
 treasuryBalance_{stablecoin} = RFV_{reserveBond} + RFV_{lpBond}
 $$
 
-The stablecoin balance in the treasury grows when bonds are sold. [RFV]is calculated differently for different bond types.
+The stablecoin balance in the treasury grows when bonds are sold. \[RFV]is calculated differently for different bond types.
 
 $$
 RFV_{reserveBond} = assetSupplied
@@ -111,5 +111,4 @@ $$
 RFV_{lpBond} = 2sqrt(constantProduct) * (\%\ ownership\ of\ the\ pool)
 $$
 
-For LP bonds such as SANCT-DAI bond and SANCT-FRAX bond, the RFV is calculated differently because the protocol needs to mark down its value. Why? The LP token pair consists of SANCT, and each SANCT in circulation will be backed by these LP tokens - there is a cyclical dependency. To safely guarantee all circulating SANCT are backed, the protocol marks down the value of these LP tokens, hence the name _risk-free_ value \(RFV\).
-
+For LP bonds such as SANCT-DAI bond and SANCT-FRAX bond, the RFV is calculated differently because the protocol needs to mark down its value. Why? The LP token pair consists of SANCT, and each SANCT in circulation will be backed by these LP tokens - there is a cyclical dependency. To safely guarantee all circulating SANCT are backed, the protocol marks down the value of these LP tokens, hence the name _risk-free_ value (RFV).
