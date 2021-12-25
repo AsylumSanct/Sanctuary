@@ -18,3 +18,4 @@
   * [Policy](protocol-internals/policy.md)
 * [Linktree](https://linktr.ee/CryptoCultistsSanctuary)
 * [Discord](https://discord.gg/fdBnEyGVc6)
+* [Credits](credits.md)
