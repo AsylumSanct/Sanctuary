@@ -16,6 +16,6 @@
 * [💫 Protocol Internals](protocol-internals/README.md)
   * [Alpha State](protocol-internals/initial-network-state.md)
   * [Policy](protocol-internals/policy.md)
+* [Credits](credits.md)
 * [Linktree](https://linktr.ee/CryptoCultistsSanctuary)
 * [Discord](https://discord.gg/fdBnEyGVc6)
-* [Credits](credits.md)

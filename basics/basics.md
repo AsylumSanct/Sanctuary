@@ -12,15 +12,15 @@ No, REAP is not a stable coin. Rather, REAP aspires to become an algorithmic res
 
 ## REAP is backed, not pegged.
 
-Each REAP will be backed by at least 1 USDC, not pegged to it. Because the treasury backs every REAP with at least 1 USDC, the protocol would buy back and burn REAP when it trades below 1 USDC. This has the effect of pushing REAP price back up to 1 USDC. REAP could always trade above 1 USDC because there is no upper limit imposed by the protocol.\
+Each REAP will  be backed by at least 1 USDC, not pegged to it. Because the treasury backs every REAP with at least 1 USDC, the protocol would buy back and burn REAP when it trades below 1 USDC. This has the effect of pushing REAP price back up to 1 USDC. REAP could always trade above 1 USDC because there is no upper limit imposed by the protocol. \
 \
-\-> Pegged == 1, while backed >= 1. <-
+&#x20;                                                 \-> Pegged == 1, while backed >= 1. <-&#x20;
 
 ## How does it work?
 
 At a high level, Sanctuary consists of its protocol managed treasury, protocol owned liquidity, bond mechanism, and staking rewards that are designed to control supply expansion, along with NFT integration (Cultists, Ghosts).
 
-Bond sales generate profit for the protocol, and the treasury uses the profit to mint REAP and distribute them to stakers. Thanks to liquidity bonds, the Sanctuary protocol is able to accumulate its own liquidity.\
+Bond sales generate profit for the protocol, and the treasury uses the profit to mint REAP and distribute them to stakers. Thanks to liquidity bonds, the Sanctuary protocol is able to accumulate its own liquidity. \
 \
 Roughly 2% of each rebase total is instead diverted to each Crypto Cultist + Ghost NFT holder. Paid out as staked REAP (SOW). This provides a unique dynamic, as anyone has the opportunity to buy a Ghost or Cultist to begin receiving a share of the 2% rebase diversion in proportion to their NFT holdings. As the TVL grows, so does each rebase, and as a result the 2% rebase diversion increases, rewards increase per NFT held, which will raise the floor price of the NFTs. We predict a stable, appreciating floor price as each NFT is indirectly backed by the treasury.
 
@@ -38,17 +38,17 @@ REAP could trade at a very high price because the market is ready to pay a hefty
 
 ## What is the point of buying it now when REAP trades at a very high premium?
 
-When you buy and stake REAP, you capture a percentage of the supply (market cap) which will remain close to a constant. This is because your staked REAP balance also increases along with the circulating supply. The implication is that if you buy REAP when the market cap is low, you would be capturing a larger percentage of the market cap.
+When you buy and stake REAP, you capture a percentage of the supply (market cap) which will remain close to a constant. This is because your staked REAP balance also increases along with the circulating supply. The implication is that if you buy REAP when the market cap is low, you would be capturing a larger percentage of the market cap.&#x20;
 
 ## What is a rebase?
 
-Rebase is a mechanism by which your staked REAP (the staked REAP variant is called SOW) balance increases automatically. When new REAP are minted by the protocol, a large portion of it goes to the stakers. Because stakers only see SOW balance instead of REAP, the protocol utilizes the rebase mechanism to increase the SOW balance so that 1 SOW is always redeemable for 1 REAP.\
-\-> 1 Sow = 1 Reap <--> 1 Reap = 1 Sow <-\
-\-> Unstaked Variant - REAP <--> Staked Variant - SOW <-
+Rebase is a mechanism by which your staked REAP (the staked REAP variant is called SOW) balance increases automatically. When new REAP are minted by the protocol, a large portion of it goes to the stakers. Because stakers only see SOW balance instead of REAP, the protocol utilizes the rebase mechanism to increase the SOW balance so that 1 SOW is always redeemable for 1 REAP. \
+&#x20;                                                   \-> 1 Sow = 1 Reap <--> 1 Reap = 1 Sow <- \
+&#x20;                                   \-> Unstaked Variant - REAP <--> Staked Variant - SOW <-
 
 ## What is reward yield?
 
-Reward yield is the percentage by which your staked SOW balance increases on the next block. It is also known as _rebase rate_. Sanctuary employs dynamic rebasing, which means your balance will increase with each block, factoring in the per-block APY.
+Reward yield is the percentage by which your staked SOW balance increases on the next block. It is also known as _rebase rate_. Sanctuary employs dynamic rebasing, which means your balance will increase with each block, factoring in the per-block APY.&#x20;
 
 ## What is APY?
 
@@ -82,7 +82,7 @@ The reward rate is subject to change under authority of the DAO and policy team.
 
 ## Why does the price of REAP become irrelevant in long term?
 
-As illustrated above, your balance will grow exponentially over time thanks to the power of compounding. Let's say you buy REAP for $400 now and the market decides that in 1 year time, the intrinsic value of REAP will be $2. Assuming a daily compound interest rate of 2%, your balance would grow to about 1377 REAP by the end of the year, which in this case would be worth around $2754. By now, you should understand that you are paying a premium for REAP now in exchange for a long-term benefit. Thus, you should have a long time horizon to allow your REAP balance to grow exponentially and make this a worthwhile investment.
+As illustrated above, your  balance will grow exponentially over time thanks to the power of compounding. Let's say you buy REAP for $400 now and the market decides that in 1 year time, the intrinsic value of REAP will be $2. Assuming a daily compound interest rate of 2%, your balance would grow to about 1377 REAP by the end of the year, which in this case would be worth around $2754. By now, you should understand that you are paying a premium for REAP now in exchange for a long-term benefit. Thus, you should have a long time horizon to allow your REAP balance to grow exponentially and make this a worthwhile investment.
 
 ## What will be REAP's intrinsic value in the future?
 
@@ -94,4 +94,5 @@ No. Staking is open to anyone, at any time. Holding the NFTs is completely optio
 
 ## Do I have to unstake and stake REAP to get my rebase rewards?
 
-No. Once you have staked REAP with Sanctuary, your SOW (staked REAP) balance will auto-compound on every block. That increase in balance represents your rebase rewards.
+No. Once you have staked REAP with Sanctuary, your SOW (staked REAP) balance will auto-compound on every block. That increase in balance represents your rebase rewards.\
+\
