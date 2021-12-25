@@ -1,6 +1,6 @@
 # NFT Holder Benefits
 
-## Cultist and Ghost NFT Holder Benefits w/o Genesis
+### Cultist and Ghost NFT Holder Benefits without Genesis
 
 Each wallet holding at least 1 Cultist or Ghost will be distributed a share of the 1% (Cultists Diversion Pool) or 0.5% (Ghosts Diversion Pool) from the total rebase indefinitely. \
 \
