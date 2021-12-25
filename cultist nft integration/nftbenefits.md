@@ -1,14 +1,18 @@
 # NFT Holder Benefits
 
-### Cultist and Ghost NFT Holder Benefits w/o Genesis
+## Cultist and Ghost NFT Holder Benefits w/o Genesis
 
-Each wallet holding at least 1 Cultist or Ghost will be distributed a share of the 1% (Cultists Diversion Pool) or 0.5% (Ghosts Diversion Pool) from the total rebase indefinitely.
+Each wallet holding at least 1 Cultist or Ghost will be distributed a share of the 1% (Cultists Diversion Pool) or 0.5% (Ghosts Diversion Pool) from the total rebase indefinitely. \
+\
+Cultists: 1% / 789\
+Ghosts (Paired): .5% / 789\
+Ghosts (Unpaired): .25% / 789
 
-### Genesis Snapshot Multipler
+## Genesis Snapshot Multipler
 
 For wallets that are holding Cultists that _aren't listed at all_ during the Genesis snapshot, all rewards will be increased by 10% per NFT held at the time of the snapshot, forever. Each wallet has only one chance to apply the Genesis multiplier, no future snapshots will occur. We're capping this at a maximum of 30 Cultists to keep it fair to the community. Exact equation pending.
 
-**Holding the NFTs:**
+## **Holding the NFTs:**
 
 Whether you mint or buy a Cultist, you will receive your share as long as the NFT is in your wallet. When/if you decide to sell, the purchasing wallet will begin to receive the rewards, until/if they decide to sell, so on and so forth.
 
@@ -20,7 +24,7 @@ _TVL x 0.4% x 0.25% / 789 Per Ghost held unpaired minus paired Ghosts (see above
 \
 You will be able to buy and sell the Cultists & Ghosts and the reward distribution will follow. This gives the NFTs stable, appreciating value.
 
-**A simple way to picture the way it works:**
+## **A simple way to picture the way it works:**
 
 Imagine taking 1% of $1,000,000 that is spread amongst 10,000 people evenly. They each would get $99 each instead of $100.
 
