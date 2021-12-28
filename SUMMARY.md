@@ -1,34 +1,34 @@
 # Table of contents
 
-## BASICS
+## 📘 BASICS
 
 * [FAQ](README.md)
 * [Staking](basics/staking.md)
 * [Bonding](basics/bonding.md)
 
-## NFTs
+## 📘 NFTs
 
 * [Holding](nfts/nftbenefits.md)
 
-## CONTRACTS
+## 📘 CONTRACTS
 
 * [Tokens](contracts/tokens.md)
 * [Staking](contracts/staking.md)
 * [Treasury](contracts/treasury.md)
 * [Policy](contracts/policy.md)
 
-## VARIABLES
+## 📘 VARIABLES
 
 * [Initial](variables/initial-network-state.md)
 * [Policy](variables/policy.md)
 
-## INFO
+## 📘 MISC
 
-* [Equations](info/equations.md)
-* [Glossary](info/glossary.md)
-* [Credits](info/credits.md)
+* [Equations](misc/equations.md)
+* [Glossary](misc/glossary.md)
+* [Credits](misc/credits.md)
 
-## LINKS
+## 🔗 LINKS
 
 * [Website](https://sanctuary.fi)
 * [Linktree](https://linktr.ee/CryptoCultistsSanctuary)
