@@ -1,5 +1,29 @@
 # Equations
 
+## APY
+
+The APY is calculated from the reward yield (rebase rate) using the following equation:
+
+$$
+APY = ( 1 + rewardYield )^{78840000}
+$$
+
+It raises to the power of 78840000 because a rebase happens upon each block. On Solana, there are \~2.5 blocks per second, or 216000 blocks daily. Multiplying by 365 days in a year gives a rebase frequency of 365 \* 216000 = 78840000. Per block (2.5/s) APY of 0.000006% - 0.000009% is expected.
+
+Reward yield is determined by the following equation:
+
+$$
+rewardYield = REAP_{distributed} / SOW_{totalStaked}
+$$
+
+The number of SOW distributed to the staking contract is calculated from total supply using the following equation:
+
+$$
+REAP_{distributed} = {totalSupply} \times rewardRate
+$$
+
+The reward rate is subject to change under authority of the DAO and policy team.
+
 ## Staking
 
 $$
@@ -40,7 +64,7 @@ $$
 bondPayout_{reserveBond} = marketValue_{asset}\ /\ bondPrice
 $$
 
-Bond payout determines the number of REAP sold to a bonder. For reserve bonds, the market value of the assets supplied by the bonder is used to determine the bond payout.&#x20;
+Bond payout determines the number of REAP sold to a bonder. For reserve bonds, the market value of the assets supplied by the bonder is used to determine the bond payout.
 
 $$
 bondPayout_{lpBond} = marketValue_{lpToken}\ /\ bondPrice
@@ -70,8 +94,6 @@ REAP_{bonders} = bondPayout
 $$
 
 Whenever someone purchases a bond, a set number of REAP is minted. These REAP will not be released to the bonder all at once - they are vested to the bonder linearly over time. The bond payout uses a different formula for different types of bonds. The Bonding section has more information.
-
-
 
 ## Backing per REAP
 

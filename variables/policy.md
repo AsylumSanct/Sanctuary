@@ -1,6 +1,6 @@
 # Policy
 
-Sanctuary features policy constants that allow us to optimize the system.
+Sanctuary variables that allow us to optimize the system.
 
 ## Bonds
 

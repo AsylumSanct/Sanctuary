@@ -1,21 +1,38 @@
 # Table of contents
 
-* [💫 Basics](README.md)
-  * [FAQ](basics/basics.md)
-  * [Bonding](basics/bonding.md)
-  * [Equations](basics/equations.md)
-  * [Glossary](basics/glossary.md)
-  * [Staking](basics/staking.md)
-* [💫 Cultist & Ghost NFT Integration](cultist-nft-integration/README.md)
-  * [NFT Holder Benefits](<cultist nft integration/nftbenefits.md>)
-* [💫 Contracts](contracts/README.md)
-  * [Policy](contracts/policy.md)
-  * [Staking](contracts/staking.md)
-  * [Tokens](contracts/tokens.md)
-  * [Treasury](contracts/treasury.md)
-* [💫 Protocol Internals](protocol-internals/README.md)
-  * [Alpha State](protocol-internals/initial-network-state.md)
-  * [Policy](protocol-internals/policy.md)
-* [Credits](credits.md)
+## BASICS
+
+* [FAQ](README.md)
+* [Staking](basics/staking.md)
+* [Bonding](basics/bonding.md)
+
+## NFTs
+
+* [Holding](nfts/nftbenefits.md)
+
+## CONTRACTS
+
+* [Tokens](contracts/tokens.md)
+* [Staking](contracts/staking.md)
+* [Treasury](contracts/treasury.md)
+* [Policy](contracts/policy.md)
+
+## VARIABLES
+
+* [Initial](variables/initial-network-state.md)
+* [Policy](variables/policy.md)
+
+## INFO
+
+* [Equations](info/equations.md)
+* [Glossary](info/glossary.md)
+* [Credits](info/credits.md)
+
+## LINKS
+
+* [Website](https://sanctuary.fi)
 * [Linktree](https://linktr.ee/CryptoCultistsSanctuary)
 * [Discord](https://discord.gg/fdBnEyGVc6)
+* [Cultists](https://www.magiceden.io/marketplace/crypto\_cultist)
+* [Ghosts](https://magiceden.io/marketplace/crypto\_cultist\_alpha\_ghosts)
+* [Github](https://github.com/sanctuarydao)
