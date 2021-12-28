@@ -1,3 +1,8 @@
+---
+cover: .gitbook/assets/CREDITS.png
+coverY: 0
+---
+
 # Credits
 
 These (work in progress) documents have been modelled after:\

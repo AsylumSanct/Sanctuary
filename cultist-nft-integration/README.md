@@ -1,6 +1,6 @@
 ---
-cover: ../.gitbook/assets/V33.png
-coverY: 115.287789133943
+cover: ../.gitbook/assets/NFTINT.png
+coverY: 0
 ---
 
 # 💫 Cultist & Ghost NFT Integration
