@@ -2,7 +2,8 @@
 
 ## 📘 BASICS
 
-* [FAQ](README.md)
+* [Introduction](README.md)
+* [FAQ](<README (1).md>)
 * [Staking](basics/staking.md)
 * [Bonding](basics/bonding.md)
 
